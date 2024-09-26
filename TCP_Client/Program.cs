@@ -33,11 +33,11 @@ class Client
  //метод за съобщенията
     static void ReceiveMessages(object obj)
     {
-        
+        //кастваме обекта към networkstream
         NetworkStream stream = (NetworkStream)obj;
         byte[] buffer = new byte[1024];
         int bytesRead;
-
+        //безкраен loop за изпращане на съобщение
         while (true)
         {
             try
