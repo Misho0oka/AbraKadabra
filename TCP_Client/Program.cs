@@ -49,7 +49,7 @@ class Client
                 {
                     break;
                 }
-                //стринг за съобщението
+                //преобразува битове в стринг
                 string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
                 Console.WriteLine(message);
             }
